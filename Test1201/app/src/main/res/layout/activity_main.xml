@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+   <CheckBox
+       android:id="@+id/checkbox"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="체크 박스" />
+
+   <Switch
+       android:id="@+id/switch1"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="스위치" />
+
+   <ToggleButton
+       android:id="@+id/toggleButton"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="토글버튼" />
+
+   <RadioGroup
+       android:id="@+id/radioGroup"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+      <RadioButton
+          android:id="@+id/male"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="남자"/>
+
+      <RadioButton
+          android:id="@+id/female"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="여자"/>
+
+      <Button
+          android:id="@+id/button"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="초기화"/>
+
+   </RadioGroup>
+
+   <ImageView
+       android:layout_width="match_parent"
+       android:layout_height="300dp"
+       app:srcCompat="@drawable/apple"/>
+
+   <ImageButton
+       android:layout_width="50dp"
+       android:layout_height="50dp"
+       app:srcCompat="@drawable/icon1"/>
+
+
+</LinearLayout>

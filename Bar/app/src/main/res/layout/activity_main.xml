@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!-- ProgressBar : 진행 상태를 바(진행 정도) 또는 원(진행 중)으로 표시 -->
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:progress="30"
+        android:secondaryProgress="50"/>
+
+    <!-- SeekBar : 사용자가 터치로 조절 가능 -->
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:progress="20"/>
+
+    <!-- RatingBar : 진행 상태를 별로 표시-->
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:numStars="5"
+        android:rating="3.5"
+        android:stepSize="0.5"/>
+
+</LinearLayout>

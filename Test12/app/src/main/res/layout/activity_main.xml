@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <!--
+     layout_width : 너비
+     layout_height : 높이
+     match_parent : 부모 크기 기준
+     wrap_content : 자신의 크기(글자, 사진, 레이아웃 등) 기준
+     숫자로 크기 지정 : in, mm, pt, dp, sp, px 등...
+     - dp, px
+     dp : 실행되는 폰의 해상도와 관계없이 같은 비율로 출력
+    -->
+
+    <EditText
+        android:id="@+id/num1"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:hint="첫 번째 숫자"/>
+
+    <EditText
+        android:id="@+id/num2"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:hint="두 번째 숫자"/>
+
+    <Button
+        android:id="@+id/plus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="더하기" />
+
+    <Button
+        android:id="@+id/minus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="빼기" />
+
+    <Button
+        android:id="@+id/multi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="곱하기" />
+
+    <Button
+        android:id="@+id/div"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="나누기" />
+
+    <Button
+        android:id="@+id/rest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="나머지" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="계산 결과 : "
+        android:textColor="#FF0000"
+        android:textSize="25dp"
+        android:layout_marginTop="10dp"/>
+
+</LinearLayout>
